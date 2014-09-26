@@ -5,14 +5,14 @@ New contributors are always welcome, when it doubt please ask questions. We stri
 ### Coding
 
 * Pick a task:
-  * Offer feedback on open [pull requests](https://github.com/zertico/fog-xml/pulls).
-  * Review open [issues](https://github.com/zertico/fog-xml/issues) for things to help on.
-  * [Create an issue](https://github.com/zertico/fog-xml/issues/new) to start a discussion on additions or features.
+  * Offer feedback on open [pull requests](https://github.com/fog/fog-xml/pulls).
+  * Review open [issues](https://github.com/fog/fog-xml/issues) for things to help on.
+  * [Create an issue](https://github.com/fog/fog-xml/issues/new) to start a discussion on additions or features.
 * Fork the project, add your changes and tests to cover them in a topic branch.
-* Commit your changes and rebase against `zertico/fog-xml` to ensure everything is up to date.
-* [Submit a pull request](https://github.com/zertico/fog-xml/compare/)
+* Commit your changes and rebase against `fog/fog-xml` to ensure everything is up to date.
+* [Submit a pull request](https://github.com/fog/fog-xml/compare/)
 
 ### Non-Coding
 
-* Offer feedback on open [issues](https://github.com/zertico/fog-xml/issues).
+* Offer feedback on open [issues](https://github.com/fog/fog-xml/issues).
 * Organize or volunteer at events.

@@ -1,8 +1,9 @@
 module Fog
-  module Xml
+  module XML
     class Connection < SAXParserConnection
-      def request(params, &block)
-        if (parser = params.delete(:parser))
+      def request(params, &_block)
+        parser = params.delete(:parser)
+        if parser
           super(parser, params)
         else
           original_request(params)
