@@ -1,6 +1,8 @@
 # Fog::Xml
 
-TODO: Write a gem description
+Shared XML related functionality for fog
+
+[![Build Status](https://secure.travis-ci.org/fog/fog-xml.png?branch=master)](http://travis-ci.org/fog/fog-xml)
 
 ## Installation
 
