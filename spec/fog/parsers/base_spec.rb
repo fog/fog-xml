@@ -46,7 +46,8 @@ describe Fog::Parsers::Base do
 
   describe 'attr_value' do
     class AttrParser < Fog::Parsers::Base
-      def start_element(name, attrs)
+      def start_element(name, attrs=[])
+        super
         @response[name] = {'foo' => attr_value('foo', attrs)}
       end
     end
