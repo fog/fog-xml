@@ -8,4 +8,8 @@ module Fog
     autoload :SAXParserConnection, "fog/xml/sax_parser_connection"
     autoload :Connection, "fog/xml/connection"
   end
+
+  module Parsers
+    autoload :Base, "fog/parsers/base"
+  end
 end
