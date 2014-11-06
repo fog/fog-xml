@@ -43,4 +43,30 @@ describe Fog::Parsers::Base do
       assert_equal({'Test'=> {'Foo' => 'FooValue', 'Bar' => 'BarValue'}}, parse(doc, ValueTest))
     end
   end
+
+  describe 'attr_value' do
+    class AttrParser < Fog::Parsers::Base
+      def start_element(name, attrs)
+        @response[name] = {'foo' => attr_value('foo', attrs)}
+      end
+    end
+
+    describe 'the attribute exists' do
+      it 'returns the value' do
+        doc = <<-XML
+        <Test foo="bar" />
+        XML
+        assert_equal({'Test'=> {'foo' => 'bar'}}, parse(doc, AttrParser))
+      end
+    end
+
+    describe 'the attribute does not exist' do
+      it 'returns nil' do
+        doc = <<-XML
+        <Test notfoo="bar" />
+        XML
+        assert_equal({'Test'=> {'foo' => nil}}, parse(doc, AttrParser))
+      end
+    end
+  end
 end
