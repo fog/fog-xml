@@ -2,7 +2,7 @@
 
 Shared XML related functionality for fog
 
-[![Build Status](https://secure.travis-ci.org/fog/fog-xml.png?branch=master)](http://travis-ci.org/fog/fog-xml)
+![Gem Version](https://badge.fury.io/rb/fog-xml.svg) [![Build Status](https://travis-ci.org/fog/fog-xml.svg?branch=master)](https://travis-ci.org/fog/fog-xml) [![Dependency Status](https://gemnasium.com/fog/fog-xml.svg)](https://gemnasium.com/fog/fog-xml) [![Coverage Status](https://img.shields.io/coveralls/fog/fog-xml.svg)](https://coveralls.io/r/fog/fog-xml?branch=master) [![Code Climate](https://codeclimate.com/github/fog/fog-xml.png)](https://codeclimate.com/github/fog/fog-xml)
 
 ## Installation
 
