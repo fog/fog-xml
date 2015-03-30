@@ -1,15 +1,16 @@
-require "fog/xml/version"
+require "fog/core"
 require "nokogiri"
+require File.expand_path("../xml/version", __FILE__)
 
 module Fog
-  autoload :ToHashDocument, "fog/to_hash_document"
+  autoload :ToHashDocument, File.expand_path("../to_hash_document", __FILE__)
 
   module XML
-    autoload :SAXParserConnection, "fog/xml/sax_parser_connection"
-    autoload :Connection, "fog/xml/connection"
+    autoload :SAXParserConnection, File.expand_path("../xml/sax_parser_connection", __FILE__)
+    autoload :Connection, File.expand_path("../xml/connection", __FILE__)
   end
 
   module Parsers
-    autoload :Base, "fog/parsers/base"
+    autoload :Base, File.expand_path("../parsers/base", __FILE__)
   end
 end

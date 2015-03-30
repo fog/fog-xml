@@ -1,5 +1,3 @@
-require "fog/core/connection"
-
 module Fog
   module XML
     class SAXParserConnection < ::Fog::Core::Connection
