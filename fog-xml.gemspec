@@ -14,7 +14,10 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/fog/fog-xml"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  files              = `git ls-files -z`.split("\x0")
+  files.delete(".hound.yml")
+  spec.files = files
+
   spec.executables   = spec.files.grep(/^bin\//) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(/^(test|spec|features)\//)
   spec.require_paths = %w(lib)
