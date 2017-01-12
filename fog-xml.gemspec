@@ -23,7 +23,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = %w(lib)
 
   spec.add_dependency "fog-core"
-  spec.add_dependency "nokogiri", "~> 1.5", ">= 1.5.11"
+  case RUBY_VERSION
+  when /^(1\.8.*|1\.9\.[01])$/
+    spec.add_dependency "nokogiri", ">= 1.5.11", "< 1.6.2"
+  when /^(1\.9\.([^01]|\d.+)|2\.0.*)$/
+    spec.add_dependency "nokogiri", ">= 1.5.11", "< 1.7.0"
+  else
+    spec.add_dependency "nokogiri", ">= 1.5.11", "< 2.0.0"
+  end
   spec.add_development_dependency "rake"
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "turn"
