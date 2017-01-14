@@ -24,19 +24,20 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "fog-core"
   case RUBY_VERSION
-  when /^(1\.8.*|1\.9\.[01])$/
-    spec.add_development_dependency "rake", "< 11.0.0"
+  when /^(1\.8.*|1\.9\.[012])$/
     spec.add_dependency "nokogiri", ">= 1.5.11", "< 1.6.2"
-  when /^(1\.9\.([^01]|\d.+)|2\.0.*)$/
-    spec.add_development_dependency "rake"
+    spec.add_development_dependency "rake", "< 11.0.0"
+  when /^(1\.9\.([^012]|\d.+)|2\.0.*)$/
     spec.add_dependency "nokogiri", ">= 1.5.11", "< 1.7.0"
-  else
     spec.add_development_dependency "rake"
+  else
     spec.add_dependency "nokogiri", ">= 1.5.11", "< 2.0.0"
+    spec.add_development_dependency "rake"
   end
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "turn"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "coveralls" if RUBY_VERSION.to_f >= 1.9
+  spec.add_development_dependency "term-ansicolor", "< 1.4.0" if RUBY_VERSION.start_with? "1.9."
   spec.add_development_dependency "tins", "< 1.7.0" if RUBY_VERSION.start_with? "1.9."
 end
