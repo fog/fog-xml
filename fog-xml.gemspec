@@ -28,7 +28,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "nokogiri", ">= 1.5.11", "< 1.7.0" #pinned for 2.0 support
   spec.add_development_dependency "rake"
   spec.add_development_dependency "minitest"
-  spec.add_development_dependency "turn"
   spec.add_development_dependency "pry"
   spec.add_development_dependency "coveralls"
 end

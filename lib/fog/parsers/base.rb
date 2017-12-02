@@ -1,8 +1,17 @@
 require "nokogiri"
+require "fog/parsers/schema"
 
 module Fog
   module Parsers
     class Base < Nokogiri::XML::SAX::Document
+      prepend Schema
+
+      def self.schema; end
+
+      def self.arrays
+        raise NotImplementedError
+      end
+
       attr_reader :response
 
       def initialize
