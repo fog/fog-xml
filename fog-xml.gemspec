@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.0.0'
 
   spec.add_dependency "fog-core"
-  spec.add_dependency "nokogiri", ">= 1.5.11", "< 1.7.0" #pinned for 2.0 support
+  spec.add_dependency "nokogiri", ">= 1.5.11", "< 2.0.0" #pinned for 2.0 support
   spec.add_development_dependency "rake"
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "turn"
