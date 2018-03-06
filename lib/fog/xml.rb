@@ -8,6 +8,7 @@ module Fog
   module XML
     autoload :SAXParserConnection, File.expand_path("../xml/sax_parser_connection", __FILE__)
     autoload :Connection, File.expand_path("../xml/connection", __FILE__)
+    autoload :Response, File.expand_path("../xml/response", __FILE__)
   end
 
   module Parsers
