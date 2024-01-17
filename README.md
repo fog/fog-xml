@@ -2,7 +2,7 @@
 
 Shared XML related functionality for fog
 
-![Gem Version](https://badge.fury.io/rb/fog-xml.svg) [![Build Status](https://github.com/fog/fog/actions/workflows/ruby.yml/badge.svg)](https://github.com/fog/fog/actions/workflows/ruby.yml) [![Coverage Status](https://img.shields.io/coveralls/fog/fog-xml.svg)](https://coveralls.io/r/fog/fog-xml?branch=master) [![Code Climate](https://codeclimate.com/github/fog/fog-xml/badges/gpa.svg)](https://codeclimate.com/github/fog/fog-xml)
+![Gem Version](https://badge.fury.io/rb/fog-xml.svg) [![Build Status](https://github.com/fog/fog-xml/actions/workflows/ruby.yml/badge.svg)](https://github.com/fog/fog-xml/actions/workflows/ruby.yml) [![Coverage Status](https://img.shields.io/coveralls/fog/fog-xml.svg)](https://coveralls.io/r/fog/fog-xml?branch=master) [![Code Climate](https://codeclimate.com/github/fog/fog-xml/badges/gpa.svg)](https://codeclimate.com/github/fog/fog-xml)
 
 ## Installation
 
