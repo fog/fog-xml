@@ -4,7 +4,7 @@ module Fog
       def initialize(parser)
         @parser = parser
         @data_stream = Nokogiri::XML::SAX::PushParser.new(parser)
-        @response_string = ""
+        @response_string = +''
       end
 
       def call(chunk, _remaining, _total)
@@ -14,7 +14,7 @@ module Fog
 
       def rewind
         @parser.reset
-        @response_string = ""
+        @response_string = +''
       end
 
       def finish

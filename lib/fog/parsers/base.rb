@@ -18,7 +18,7 @@ module Fog
       end
 
       def characters(string)
-        @value ||= ''
+        @value ||= +''
         @value << string
       end
 
