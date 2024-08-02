@@ -5,20 +5,22 @@ module Fog
     end
 
     def characters(string)
-      @value ||= ""
+      @value ||= +''
       @value << string.strip
     end
 
     def end_element(name)
       last = @stack.pop
-      if last.empty? && @value.empty?
-        @stack.last[name.to_sym] = ""
+      @stack.push({}) if @stack.empty?
+
+      if last&.empty? && @value.empty?
+        @stack.last[name.to_sym] = +''
       elsif last == { :i_nil => "true" }
         @stack.last[name.to_sym] = nil
       elsif !@value.empty?
         @stack.last[name.to_sym] = @value
       end
-      @value = ""
+      @value = +''
     end
 
     def body
@@ -30,7 +32,7 @@ module Fog
     end
 
     def start_element(name, attributes = [])
-      @value = ""
+      @value = +''
       parsed_attributes = {}
       until attributes.empty?
         if attributes.first.is_a?(Array)
