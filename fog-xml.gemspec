@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/fog/fog-xml"
   spec.license       = "MIT"
 
-  files              = `git ls-files -z`.split("\x0")
+  files              = `git ls-files -z`.split("\x0").reject {|f| f.start_with? ('spec/') }
   files.delete(".hound.yml")
   spec.files = files
 
