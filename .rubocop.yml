@@ -4,9 +4,6 @@ Metrics/LineLength:
 Style/EachWithObject:
   Enabled: false
 
-Style/Encoding:
-  EnforcedStyle: when_needed
-
 Style/FormatString:
   Enabled: false
 
